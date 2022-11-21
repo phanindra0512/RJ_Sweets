@@ -1,11 +1,12 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
-
-const MobileNumber = ({navigation}) => {
+import RJInput from "../../components/RJInput/RJInput.ui.tsx";
+const MobileNumber = ({ navigation }) => {
   return (
     <View>
       <Text> phanindra MobileNumber</Text>
-      <Button title="click" onPress={() => navigation.navigate('OTP')} />
+      <Button title="click" onPress={() => navigation.navigate("OTP")} />
+      <RJInput />
     </View>
   );
 };
