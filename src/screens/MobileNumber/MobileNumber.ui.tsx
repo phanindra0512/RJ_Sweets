@@ -14,7 +14,9 @@ const MobileNumber = ({ navigation }) => {
   };
   return (
     <View style={{ flex: 1, backgroundColor: "white", alignItems: "center" }}>
-      <Text> phanindra MobileNumber</Text>
+      <Text style={{ fontSize: 25, fontFamily: "JosefinSans" }}>
+        phanindra MobileNumber
+      </Text>
       <Button title="click" onPress={() => navigation.navigate("OTP")} />
       <RJInput
         placeholder={"Mobile Number"}
