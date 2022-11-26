@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from "react-native";
+import COLOR from "../../assets/utils/Color";
 
 const windowWidth = Dimensions.get("window").width;
 
@@ -13,7 +14,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 20,
-    color: "white",
+    color: COLOR.white,
+    fontFamily: "Ubuntu-Bold",
   },
 });
 export default styles;

@@ -11,8 +11,16 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="MobileNumber" component={MobileNumber} />
-        <Stack.Screen name="OTP" component={OTP} />
+        <Stack.Screen
+          name="MobileNumber"
+          component={MobileNumber}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="OTP"
+          component={OTP}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

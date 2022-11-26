@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     borderColor: "gray",
     backgroundColor: "#fff",
     fontSize: 18,
+    fontFamily: "Ubuntu-Medium",
   },
 });
 export default styles;

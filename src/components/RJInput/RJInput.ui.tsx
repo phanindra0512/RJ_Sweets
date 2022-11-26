@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { View, Text, TextInput } from "react-native";
 import styles from "./RJInput.styles";
+import COLOR from "../../assets/utils/Color";
+
 type RJInputProps = {
   style?: any;
   placeholder?: string;
@@ -12,14 +14,14 @@ type RJInputProps = {
 const RJInput = <RJInputProps>(props) => {
   return (
     <View>
-      <Text>Text input component</Text>
       <TextInput
         placeholder={props.placeholder}
         value={props.value}
         onChangeText={props.onChangeText}
         style={styles.input}
-        placeholderTextColor={"#A8A8A8"}
-        placeholderStyle={{ fontFamily: "montserrat_semibold" }}
+        placeholderTextColor={COLOR.headings}
+        keyboardType={props.keyboardType}
+        maxLength={props.maxLength}
       />
     </View>
   );
