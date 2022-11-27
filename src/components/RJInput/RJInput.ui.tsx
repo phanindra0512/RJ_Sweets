@@ -11,17 +11,19 @@ type RJInputProps = {
   keyboardType: string;
 };
 
-const RJInput = <RJInputProps>(props) => {
+const RJInput = (props) => {
   return (
     <View>
       <TextInput
         placeholder={props.placeholder}
         value={props.value}
         onChangeText={props.onChangeText}
-        style={styles.input}
+        style={[styles.input, props.style]}
         placeholderTextColor={COLOR.headings}
         keyboardType={props.keyboardType}
         maxLength={props.maxLength}
+        editable={props.editable}
+        placeholderTextColor={"#CCC"}
       />
     </View>
   );

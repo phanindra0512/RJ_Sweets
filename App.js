@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import MobileNumber from "./src/screens/MobileNumber/MobileNumber.ui";
 import OTP from "./src/screens/OTP/OTP.ui";
-
+import CreateProfile from "./src/screens/CreateProfile/CreateProfile.ui";
 const App = () => {
   const Stack = createNativeStackNavigator();
 
@@ -19,6 +19,11 @@ const App = () => {
         <Stack.Screen
           name="OTP"
           component={OTP}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="CreateProfile"
+          component={CreateProfile}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

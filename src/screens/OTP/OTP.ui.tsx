@@ -16,7 +16,7 @@ import COLOR from "../../assets/utils/Color";
 
 const ScreenHeight = Dimensions.get("window").height;
 
-const OTP = () => {
+const OTP = ({ navigation }) => {
   const [isOtp, setIsOtp] = useState("");
   const onChangeEvent = (text) => {
     setIsOtp(text);
@@ -24,7 +24,7 @@ const OTP = () => {
   };
   const onPressEvent = () => {
     console.log("Button clicked");
-    // navigation.navigate("OTP");
+    navigation.navigate("CreateProfile");
   };
 
   return (
