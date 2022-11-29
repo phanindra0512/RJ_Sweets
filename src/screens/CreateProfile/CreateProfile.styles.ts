@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
   button: {
     borderRadius: 7,
     backgroundColor: COLOR.buttonSolid,
+    alignSelf: "center",
   },
 });
 export default styles;
