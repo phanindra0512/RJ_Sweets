@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   subHeading: {
     fontSize: 13,
     fontFamily: "Ubuntu-Medium",
-    color: COLOR.buttonText,
+    color: COLOR.whiteDull,
   },
   button: {
     borderRadius: 7,

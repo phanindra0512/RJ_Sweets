@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     borderColor: "gray",
     backgroundColor: "#fff",
-    fontSize: 16,
+    fontSize: 15,
     fontFamily: "Ubuntu-Medium",
   },
 });

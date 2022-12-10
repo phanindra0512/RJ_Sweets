@@ -2,10 +2,16 @@ import React from "react";
 import { View, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import MobileNumber from "./src/screens/MobileNumber/MobileNumber.ui";
-import OTP from "./src/screens/OTP/OTP.ui";
-import CreateProfile from "./src/screens/CreateProfile/CreateProfile.ui";
-import Dashboard from "./src/screens/Dashboard/Dashboard.ui.tsx";
+import {
+  CreateProfile,
+  Dashboard,
+  CreateOrder,
+  ViewOrders,
+  OTP,
+  MobileNumber,
+  MyCart,
+  OrderDetails,
+} from "./src/screens";
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -31,6 +37,29 @@ const App = () => {
         <Stack.Screen
           name="Dashboard"
           component={Dashboard}
+          options={{ headerShown: false }}
+        />
+
+        <Stack.Screen
+          name="CreateOrder"
+          component={CreateOrder}
+          options={{ headerShown: false }}
+        />
+
+        <Stack.Screen
+          name="ViewOrders"
+          component={ViewOrders}
+          options={{ headerShown: false }}
+        />
+
+        <Stack.Screen
+          name="MyCart"
+          component={MyCart}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="OrderDetails"
+          component={OrderDetails}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

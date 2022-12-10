@@ -66,5 +66,38 @@ const styles = StyleSheet.create({
     borderStyle: "dashed",
     alignSelf: "flex-end",
   },
+  servicesHeading: {
+    color: COLOR.headings,
+    fontSize: 18,
+    fontFamily: "Ubuntu-Bold",
+    paddingVertical: 15,
+  },
+  cardContainer: {
+    width: 65,
+    height: 60,
+    backgroundColor: "transparent",
+    borderRadius: 5,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  servicesContainer: {
+    flex: 1,
+    marginTop: 60,
+    paddingLeft: 15,
+  },
+  servicesBlock: {
+    width: 100,
+    height: 100,
+    alignItems: "center",
+    justifyContent: "center",
+    marginRight: 10,
+  },
+  servicesTitle: {
+    fontSize: 14,
+    fontFamily: "Ubuntu-Bold",
+    textAlign: "center",
+    paddingTop: 8,
+    color: COLOR.headings,
+  },
 });
 export default styles;
