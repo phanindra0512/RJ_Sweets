@@ -81,7 +81,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   servicesContainer: {
-    flex: 1,
     marginTop: 60,
     paddingLeft: 15,
   },

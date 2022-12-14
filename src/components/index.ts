@@ -4,5 +4,16 @@ import RJItemCard from "./RJItemCard/RJItemCard.ui.tsx";
 import RJButton from "./RJButton/RJButton.ui.tsx";
 import RJSearchBar from "./RJSearchBar/RJSearchBar.ui.tsx";
 import RJInput from "./RJInput/RJInput.ui.tsx";
+import BottomTabBar from "./BottomTabBar/BottomTabBar.ui.tsx";
+import ImageCarousel from "./ImageCarousel/ImageCarousel.ui.tsx";
 
-export { Header, VerticalLine, RJItemCard, RJButton, RJSearchBar, RJInput };
+export {
+  Header,
+  VerticalLine,
+  RJItemCard,
+  RJButton,
+  RJSearchBar,
+  RJInput,
+  BottomTabBar,
+  ImageCarousel,
+};

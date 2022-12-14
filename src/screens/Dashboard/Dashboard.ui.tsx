@@ -8,6 +8,7 @@ import {
   DashboardOrderStatus,
   myServices,
 } from "../../constants/DashboardOrderStatus.constants.ts";
+import { ImageCarousel } from "../../components";
 
 const Dashboard = ({ navigation }) => {
   const headerContainer = () => {
@@ -105,7 +106,10 @@ const Dashboard = ({ navigation }) => {
         {headerContainer()}
         {orderStatusContainer()}
       </View>
+
       {ourServices()}
+
+      <ImageCarousel />
     </View>
   );
 };
