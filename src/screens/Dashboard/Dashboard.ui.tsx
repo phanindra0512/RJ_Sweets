@@ -106,10 +106,11 @@ const Dashboard = ({ navigation }) => {
         {headerContainer()}
         {orderStatusContainer()}
       </View>
-
+      <View style={styles.coroselContainer}>
+        {/* <ImageCarousel /> */}
+        <Text>This is for image courosel</Text>
+      </View>
       {ourServices()}
-
-      <ImageCarousel />
     </View>
   );
 };

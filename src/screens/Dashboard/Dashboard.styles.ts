@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   servicesContainer: {
-    marginTop: 60,
+    // marginTop: 60,
     paddingLeft: 15,
   },
   servicesBlock: {
@@ -97,6 +97,13 @@ const styles = StyleSheet.create({
     textAlign: "center",
     paddingTop: 8,
     color: COLOR.headings,
+  },
+  coroselContainer: {
+    backgroundColor: "#f5f5f5",
+    height: 130,
+    marginTop: 80,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
 export default styles;

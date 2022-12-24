@@ -1,7 +1,8 @@
-import { View, Text } from "react-native";
+import { View, Text, Image, Dimensions } from "react-native";
 import React from "react";
 import styles from "./ImageCarousel.styles.ts";
 import Carousel from "react-native-snap-carousel";
+const ScreenWidth = Dimensions.get("window").width;
 
 const imageData = [
   {
@@ -28,7 +29,7 @@ const _renderItem = ({ item, index }) => {
     <View style={{ marginVertical: 15 }}>
       <Image
         source={{ uri: item.image }}
-        style={{ width: 300, height: 90, borderRadius: 10 }}
+        style={{ width: ScreenWidth - 30, height: 90, borderRadius: 10 }}
       />
     </View>
   );
@@ -41,8 +42,8 @@ const ImageCarousel = () => {
         // ref={(c) => { this._carousel = c; }}
         data={imageData}
         renderItem={_renderItem}
-        sliderWidth={360}
-        itemWidth={300}
+        sliderWidth={ScreenWidth - 30}
+        itemWidth={ScreenWidth - 20}
         layout={"default"}
         layoutCardOffset={18}
       />

@@ -6,6 +6,7 @@ import RJSearchBar from "./RJSearchBar/RJSearchBar.ui.tsx";
 import RJInput from "./RJInput/RJInput.ui.tsx";
 import BottomTabBar from "./BottomTabBar/BottomTabBar.ui.tsx";
 import ImageCarousel from "./ImageCarousel/ImageCarousel.ui.tsx";
+import RJCartItem from "./RJCartItem/RJCartItem.ui.tsx";
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   RJInput,
   BottomTabBar,
   ImageCarousel,
+  RJCartItem,
 };

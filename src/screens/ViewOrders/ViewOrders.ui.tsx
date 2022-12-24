@@ -30,6 +30,7 @@ const ViewOrders = ({ navigation }) => {
         {myOrders.map((item) => {
           return (
             <TouchableOpacity
+              key={item.id}
               activeOpacity={0.5}
               onPress={handleNavigation}
               style={styles.cardContainer}
