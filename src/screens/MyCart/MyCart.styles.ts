@@ -5,9 +5,9 @@ const windowWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 18,
-    fontFamily: "Ubuntu-Bold",
-    color: COLOR.black,
+    fontSize: 16.5,
+    fontFamily: "Ubuntu-Medium",
+    color: COLOR.dullBlack,
     padding: 10,
   },
   itemsCard: {

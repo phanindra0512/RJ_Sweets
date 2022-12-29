@@ -11,6 +11,9 @@ const MyCart = ({ navigation }) => {
     navigation.goBack();
   };
 
+  const handleNextNavigation = () => {
+    navigation.navigate("Payment");
+  };
   const billDetails = () => {
     return (
       <View>
@@ -49,7 +52,7 @@ const MyCart = ({ navigation }) => {
         </View>
 
         <TouchableOpacity
-          // onPress={handleNextNavigation}
+          onPress={handleNextNavigation}
           style={styles.nextNavigation}
         >
           <Text style={[styles.count, { fontSize: 18 }]}>Proceed to pay</Text>

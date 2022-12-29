@@ -9,6 +9,8 @@ import OrderDetails from "./OrderDetails/OrderDetails.ui.tsx";
 import Analytics from "./Analytics/Analytics.ui.tsx";
 import Bottom2 from "./Bottom2/Bottom2.ui.tsx";
 import Bottom3 from "./Bottom3/Bottom3.ui.tsx";
+import Payment from "./Payment/Payment.ui.tsx";
+import SuccessScreen from "./SuccessScreen/SuccessScreen.ui.tsx";
 
 export {
   CreateOrder,
@@ -22,4 +24,6 @@ export {
   Analytics,
   Bottom2,
   Bottom3,
+  Payment,
+  SuccessScreen,
 };

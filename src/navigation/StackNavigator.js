@@ -8,6 +8,8 @@ import {
   MobileNumber,
   MyCart,
   OrderDetails,
+  Payment,
+  SuccessScreen,
 } from "../screens";
 import BottomNavigation from "./BottomNavigation";
 
@@ -56,6 +58,16 @@ const StackNavigator = () => {
       <Stack.Screen
         name="OrderDetails"
         component={OrderDetails}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Payment"
+        component={Payment}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="SuccessScreen"
+        component={SuccessScreen}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

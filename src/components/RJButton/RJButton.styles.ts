@@ -8,14 +8,14 @@ const styles = StyleSheet.create({
     height: 45,
     width: windowWidth - 50,
     borderRadius: 5,
-    backgroundColor: "red",
+    backgroundColor: COLOR.buttonSolid,
     alignItems: "center",
     justifyContent: "center",
   },
   text: {
-    fontSize: 20,
+    fontSize: 18,
     color: COLOR.white,
-    fontFamily: "Ubuntu-Bold",
+    fontFamily: "Ubuntu-Medium",
   },
 });
 export default styles;

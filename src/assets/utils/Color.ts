@@ -3,6 +3,7 @@ const COLOR = {
   buttonText: "#d9c8c0",
   headings: "#544e50",
   black: "#000",
+  dullBlack: "#4f4944",
   subheadingLight: "#dad8d9",
   subheadingDark: "#e9e3e3",
   white: "#FFFFFF",

@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   prodName: {
-    fontSize: 18,
+    fontSize: 15,
     fontFamily: "Ubuntu-Bold",
     color: COLOR.black,
   },
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 11,
     fontFamily: "Ubuntu-Medium",
-    color: "#ccc",
+    color: COLOR.darkGray,
   },
   counterBlock: {
     justifyContent: "center",

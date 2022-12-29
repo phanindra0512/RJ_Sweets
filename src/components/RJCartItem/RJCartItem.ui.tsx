@@ -37,7 +37,7 @@ const RJCartItem = (props) => {
   };
 
   return (
-    <View style={styles.itemContainer}>
+    <View key={data.id} style={styles.itemContainer}>
       <View style={{ flex: 0.9 }}>
         <Text numberOfLines={2} style={styles.title}>
           {data.productName}
