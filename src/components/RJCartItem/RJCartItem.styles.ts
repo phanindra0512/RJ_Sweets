@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     // backgroundColor: "red",
     flexDirection: "row",
-    alignItems: "center",
+    // alignItems: "center",
     paddingLeft: 10,
   },
   title: { fontSize: 16, fontFamily: "Ubuntu-Regular", color: COLOR.black },
@@ -27,6 +27,12 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: "Ubuntu-Bold",
     color: COLOR.white,
+  },
+  subHeading: {
+    fontSize: 12,
+    fontFamily: "Ubuntu-Medium",
+    paddingVertical: 3,
+    color: COLOR.darkGray,
   },
 });
 export default styles;

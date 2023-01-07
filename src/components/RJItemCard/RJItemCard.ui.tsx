@@ -57,16 +57,31 @@ const RJItemCard = (props) => {
   return (
     <View key={data.id} style={styles.cardContainer}>
       <Image source={data.productImage} style={styles.image} />
-      <View style={{ flex: 1.5, paddingLeft: 10 }}>
+      <View style={styles.contentBlock}>
         <Text style={styles.prodName}>{data.productName}</Text>
+
+        <View style={{ flexDirection: "row", marginTop: 5 }}>
+          <View style={styles.sizeContainer}>
+            <Text style={styles.title}>SIZE</Text>
+            <Text style={styles.subHeading}>{data.size}</Text>
+          </View>
+
+          <View style={styles.sizeContainer}>
+            <Text style={styles.title}>PIECES</Text>
+            <Text style={styles.subHeading}>{data.quantity}</Text>
+          </View>
+        </View>
+
+        {/* <Text numberOfLines={2} style={styles.description}>
+          {data.productDescription}
+        </Text> */}
+      </View>
+      <View style={styles.counterBlock}>
         <Text style={styles.prodPrice}>
           {"\u20B9"} {data.productPrice}
         </Text>
-        <Text numberOfLines={2} style={styles.description}>
-          {data.productDescription}
-        </Text>
+        {isAdd ? counter() : addButton()}
       </View>
-      <View style={styles.counterBlock}>{isAdd ? counter() : addButton()}</View>
     </View>
   );
 };

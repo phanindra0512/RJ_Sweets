@@ -8,6 +8,7 @@ import BottomTabBar from "./BottomTabBar/BottomTabBar.ui.tsx";
 import ImageCarousel from "./ImageCarousel/ImageCarousel.ui.tsx";
 import RJCartItem from "./RJCartItem/RJCartItem.ui.tsx";
 import RJRadioButton from "./RJRadioButton/RJRadioButton.ui.tsx";
+import RJSquareButton from "./RJSquareButton/RJSquareButton.ui.tsx";
 
 export {
   Header,
@@ -20,4 +21,5 @@ export {
   ImageCarousel,
   RJCartItem,
   RJRadioButton,
+  RJSquareButton,
 };

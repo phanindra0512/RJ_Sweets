@@ -5,6 +5,8 @@ export const myProducts = [
     productPrice: 300,
     productDescription: "In packet contains 12 pieces that contains 100g",
     productImage: require("../assets/images/Peenut-Balls.jpg"),
+    size: "Small",
+    quantity: 12,
   },
   {
     id: 2,
@@ -12,6 +14,8 @@ export const myProducts = [
     productPrice: 100,
     productDescription: "In packet contains 12 pieces that contains 100g",
     productImage: require("../assets/images/nuvvula-undalu.jpg"),
+    size: "Small",
+    quantity: 12,
   },
   {
     id: 3,
@@ -19,6 +23,8 @@ export const myProducts = [
     productPrice: 150,
     productDescription: "In packet contains 12 pieces that contains 100g",
     productImage: require("../assets/images/pappu-chegodi.jpg"),
+    size: "Large",
+    quantity: 12,
   },
   {
     id: 4,
@@ -26,5 +32,7 @@ export const myProducts = [
     productPrice: 150,
     productDescription: "In packet contains 12 pieces that contains 100g",
     productImage: require("../assets/images/maramaralu-Undalu.jpg"),
+    size: "Small",
+    quantity: 10,
   },
 ];

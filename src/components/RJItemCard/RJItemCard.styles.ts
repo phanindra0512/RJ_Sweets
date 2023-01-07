@@ -4,20 +4,19 @@ import COLOR from "../../assets/utils/Color";
 const styles = StyleSheet.create({
   cardContainer: {
     backgroundColor: COLOR.white,
-    height: 100,
     marginHorizontal: 10,
     borderRadius: 10,
     flexDirection: "row",
   },
   image: {
-    width: 85,
-    height: 85,
+    width: 70,
+    height: 70,
     borderRadius: 10,
     margin: 5,
   },
   prodName: {
     fontSize: 15,
-    fontFamily: "Ubuntu-Bold",
+    fontFamily: "Ubuntu-Medium",
     color: COLOR.black,
   },
   prodPrice: {
@@ -31,8 +30,18 @@ const styles = StyleSheet.create({
     fontFamily: "Ubuntu-Medium",
     color: COLOR.darkGray,
   },
-  counterBlock: {
+  contentBlock: {
+    flex: 1.5,
+    paddingLeft: 10,
+    paddingTop: 10,
+  },
+  sizeContainer: {
     justifyContent: "center",
+    alignItems: "center",
+    marginRight: 10,
+  },
+  counterBlock: {
+    justifyContent: "space-evenly",
     alignItems: "center",
     paddingHorizontal: 10,
   },
@@ -61,6 +70,18 @@ const styles = StyleSheet.create({
     height: 30,
     alignItems: "center",
     justifyContent: "center",
+  },
+  title: {
+    fontSize: 11,
+    fontFamily: "Ubuntu-Bold",
+    paddingTop: 3,
+    color: COLOR.darkGray,
+  },
+  subHeading: {
+    fontSize: 12,
+    fontFamily: "Ubuntu-Medium",
+    paddingVertical: 3,
+    color: COLOR.dullBlack,
   },
 });
 export default styles;

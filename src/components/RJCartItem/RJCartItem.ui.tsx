@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./RJCartItem.styles.ts";
 import COLOR from "../../assets/utils/Color.ts";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import { RJSquareButton } from "../../components";
 
 const RJCartItem = (props) => {
   const { data } = props;
@@ -38,19 +39,18 @@ const RJCartItem = (props) => {
 
   return (
     <View key={data.id} style={styles.itemContainer}>
-      <View style={{ flex: 0.9 }}>
+      <View style={{ paddingTop: 5 }}>
+        <RJSquareButton />
+      </View>
+      <View style={{ flex: 0.9, paddingLeft: 10 }}>
         <Text numberOfLines={2} style={styles.title}>
           {data.productName}
         </Text>
+        <Text style={styles.subHeading}>Small</Text>
       </View>
-      <View style={{ width: 100 }}>{counter()}</View>
+      <View style={{ paddingRight: 10 }}>{counter()}</View>
 
-      <View
-        style={{
-          width: 90,
-          alignItems: "center",
-        }}
-      >
+      <View style={{ paddingTop: 5 }}>
         <Text style={styles.title}>
           {"\u20B9"} {data.productPrice * isCount}
         </Text>

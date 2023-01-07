@@ -77,8 +77,8 @@ const MyCart = ({ navigation }) => {
         <Text style={styles.heading}>Your Order</Text>
 
         <View style={styles.itemsCard}>
-          {myCart.map((item) => {
-            return <RJCartItem data={item} />;
+          {myCart.map((item, index) => {
+            return <RJCartItem key={index} data={item} />;
           })}
         </View>
 
